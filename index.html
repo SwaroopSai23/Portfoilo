@@ -1,0 +1,213 @@
+<!doctype html>
+<html lang="en">
+
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>Kollipara Jyothi Swaroop Sai — Portfolio</title>
+  <meta name="description" content="Cloud + AI Enthusiast | 3rd Year CSE @ PVP Siddhartha" />
+  <style>
+    :root {
+      --bg: #0f172a;
+      --card: #111827;
+      --muted: #94a3b8;
+      --text: #e5e7eb;
+      --accent: #60a5fa;
+      --accent2: #34d399;
+      --border: #1f2937;
+    }
+
+    * { box-sizing: border-box }
+
+    body {
+      margin: 0;
+      font-family: system-ui, -apple-system, Segoe UI, Roboto, "Helvetica Neue", Arial;
+      line-height: 1.6;
+      color: var(--text);
+      background: radial-gradient(1200px 800px at 80% -10%, rgba(96,165,250,.15), transparent 60%), var(--bg);
+    }
+
+    a { color: var(--accent); text-decoration: none }
+    a:hover { text-decoration: underline }
+
+    header {
+      position: sticky; top: 0;
+      backdrop-filter: blur(6px);
+      background: rgba(15,23,42,.65);
+      border-bottom: 1px solid var(--border);
+      z-index: 10;
+    }
+    .nav { max-width: 1100px; margin:0 auto; display:flex; justify-content:space-between; align-items:center; padding:12px 18px; }
+    .nav h1 { margin:0; font-size:18px }
+    .nav .links a { margin-left:16px; color:var(--muted) }
+
+    .container { max-width:1100px; margin:0 auto; padding:24px 18px 64px }
+    .hero { display:grid; grid-template-columns:1.2fr .8fr; gap:28px; align-items:center; padding:32px 0 10px }
+
+    .tag { background:rgba(52,211,153,.15); color:var(--accent2); border:1px solid rgba(52,211,153,.25); border-radius:999px; padding:6px 10px; font-size:12px; display:inline-block; }
+    .title { font-size:40px; margin:10px 0 12px }
+    .subtitle { color:var(--muted); font-size:16px; margin:0 0 18px }
+    .cta a { display:inline-block; margin-right:12px; padding:10px 14px; border-radius:10px; border:1px solid var(--border) }
+    .btn { background:linear-gradient(90deg,var(--accent),var(--accent2)); color:#051016; border:none; font-weight:600 }
+
+    .avatar { width:160px; height:160px; border-radius:16px; border:1px solid var(--border); object-fit:cover; justify-self:end; background:#0b1220; }
+
+    section { margin-top:42px }
+    h2 { margin:0 0 12px; font-size:22px }
+    .muted { color:var(--muted) }
+    .grid { display:grid; gap:16px }
+    .cols-3 { grid-template-columns:repeat(3, minmax(0,1fr)) }
+    .cols-2 { grid-template-columns:repeat(2, minmax(0,1fr)) }
+    .card { background:linear-gradient(180deg,#0b1220,#0a1020); border:1px solid var(--border); border-radius:14px; padding:16px; }
+    .chip { font-size:12px; color:var(--muted); border:1px solid var(--border); padding:4px 8px; border-radius:999px }
+    .proj-title { margin:2px 0 6px; font-size:18px }
+    footer { margin-top:44px; border-top:1px solid var(--border); padding-top:16px; color:var(--muted); font-size:14px }
+
+    @media(max-width:900px){
+      .hero{ grid-template-columns:1fr }
+      .avatar{ justify-self:start }
+      .cols-2, .cols-3{ grid-template-columns:1fr }
+    }
+  </style>
+</head>
+
+<body>
+  <header>
+    <div class="nav">
+      <h1>Kollipara Jyothi Swaroop Sai</h1>
+      <div class="links">
+        <a href="#projects">Projects</a>
+        <a href="#skills">Skills</a>
+        <a href="#education">Education</a>
+        <a href="#achievements">Achievements</a>
+        <a href="#contact">Contact</a>
+      </div>
+    </div>
+  </header>
+
+  <main class="container">
+    <section class="hero">
+      <div>
+        <span class="tag">OPEN TO INTERNSHIPS</span>
+        <h2 class="title">Kollipara Jyothi Swaroop Sai</h2>
+        <p class="subtitle">3rd-year CSE @ PVP Siddhartha | Data Science & Cloud Enthusiast | Building AI-powered apps</p>
+        <div class="row cta">
+          <a class="btn" href="assets/Kollipara_Jyothi_Swaroop_Sai (4).pdf" target="_blank">Download Resume</a>
+          <a href="https://github.com/SwaroopSai23" target="_blank">GitHub</a>
+          <a href="www.linkedin.com/in/kollipara-jyothi-swaroop-sai-1b28332a7" target="_blank">LinkedIn</a>
+          <a href="mailto:swaroopsai2005@gmail.com">Email</a>
+        </div>
+      </div>
+      <img class="avatar" src="assets/profile.jpg" alt="Kollipara Jyothi Swaroop Sai" />
+    </section>
+
+    <section id="projects">
+      <h2>Highlighted Projects</h2>
+      <div id="projectsGrid" class="grid cols-3"></div>
+    </section>
+
+    <section id="skills">
+      <h2>Technical Skills</h2>
+      <div class="row">
+        <span class="chip">Languages: Python, Java, JavaScript</span>
+        <span class="chip">Web: HTML, CSS, React, Next.js, MERN</span>
+        <span class="chip">Cloud: AWS (EC2, S3, Data Engineering)</span>
+        <span class="chip">Tools: Git, GitHub, VS Code</span>
+        <span class="chip">Data Science: Wrangling, Visualization</span>
+      </div>
+    </section>
+
+    <section id="education" class="grid cols-2">
+      <div class="card">
+        <strong>B.Tech — Computer Science & Engineering</strong><br />
+        PVP Siddhartha Institute of Technology, Vijayawada<br />
+        <span class="muted">2023 -2027 • CGPA: 9.11/10</span><br />
+        <span class="muted">Relevant coursework: DSA, DBMS, OS, CN, AI, Cloud</span>
+      </div>
+      <div class="card">
+        <strong>Internships & Training</strong>
+        <ul class="muted">
+          <li>Google AI-ML Virtual Internship (Jul -Sep 2025)</li>
+          <li>MERN Stack Developer Intern (Mar -May 2025)</li>
+          <li>AWS Data Engineering Internship (Jan -Mar 2025)</li>
+        </ul>
+      </div>
+    </section>
+
+    <section id="achievements">
+      <h2>Achievements</h2>
+      <ul class="muted">
+        <li><strong>1st Prize</strong> — 12-hour Hackathon on Chatbot Development (BusBuddy Chatbot)</li>
+        <li><strong>2nd Prize</strong> — 8-hour Ideathon (TimeTide Pomodoro App)</li>
+        <li>Treasurer-Rotaract Club Of PVP Siddhartha Institute Of </li>
+        <li>Intl Service Director — Rotaract Club (2025 -Present)</li>
+        <li>NSS Volunteer — 2025 -Present</li>
+      </ul>
+    </section>
+
+    <section id="contact">
+      <h2>Contact</h2>
+      <p class="muted">Email: <a href="mailto:swaroopsai2005@gmail.com">swaroopsai2005@gmail.com</a> • Phone: +91-95426 94427 • Vijayawada, Andhra Pradesh</p>
+    </section>
+
+    <footer>
+      © <span id="year"></span> Kollipara Jyothi Swaroop Sai. Built with HTML/CSS. Hosted on GitHub Pages.
+    </footer>
+  </main>
+
+  <script>
+    const PROJECTS = [
+      {
+        title: "BusBuddy Chatbot",
+        about: "AI chatbot providing bus routes, distance, weather updates, and student pass info. Built in 12-hr hackathon using Streamlit and Gemini APIs.",
+        tech: ["Python", "Streamlit", "Gemini", "OpenWeather", "Stability AI"],
+        github: "https://github.com/SwaroopSai23/Workshop_Chatbot_Genai",
+      },
+      {
+        title: "TimeTide Pomodoro App",
+        about: "Pomodoro app with gamified productivity, weekly analytics, and AI-based prediction. Integrates JWT and weather APIs.",
+        tech: ["MERN", "MongoDB", "JWT", "External APIs"],
+        github: "https://github.com/SwaroopSai23/TIme-Tide-Smart-Time-Management",
+      },
+      {
+        title: "Flip a Coin Web App",
+        about: "Simple coin toss simulator built with React & Next.js, deployed on Vercel.",
+        tech: ["React", "Next.js", "Vercel"],
+        github: "https://github.com/SwaroopSai23/Coin-Flip",
+      },
+      {
+        title: "Generate QR For link,image",
+        about: "Generating the QR",
+        tech: ["JS", "HTML","CSS", "Vercel"],
+        github: "https://github.com/SwaroopSai23/Generate-QR",
+      },
+      {
+        title: "Book Store Website",
+        about: "Static website for browsing books built with HTML, CSS, and JS.",
+        tech: ["HTML", "CSS", "JavaScript"],
+        github: "https://github.com/SwaroopSai23",
+      },
+      {
+        title: "Capstone Data Science Project",
+        about: "End-to-end data pipeline for wrangling, visualization, and analysis.",
+        tech: ["Python", "Pandas", "Matplotlib"],
+        github: "https://github.com/SwaroopSai23/Capstone-DataScience",
+      }
+    ];
+
+    const grid = document.getElementById("projectsGrid");
+    grid.innerHTML = PROJECTS.map(p => `
+      <article class="card">
+        <h3 class="proj-title">${escapeHtml(p.title)}</h3>
+        <p class="muted">${escapeHtml(p.about)}</p>
+        <div class="row" style="margin:8px 0 10px">${(p.tech || []).map(t => `<span class="chip">${escapeHtml(t)}</span>`).join("")}</div>
+        <p class="proj-links"><a href="${p.github}" target="_blank">GitHub ↗</a></p>
+      </article>
+    `).join("");
+
+    document.getElementById("year").textContent = new Date().getFullYear();
+
+    function escapeHtml(s) { return (s || "").replace(/[&<>"']/g, m => ({ '&': '&amp;', '<': '&lt;', '>': '&gt;', '"': '&quot;', "'": '&#39;' }[m])); }
+  </script>
+</body>
+</html>
